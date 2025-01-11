@@ -55,9 +55,15 @@ public class Usuario {
 		 }
 	 }
 	 
-	 public listarUsuarios()
+	 public void listarUsuarios(Usuario[] usuario)
 	 {
-		 
+		 for (int i = 0; i < usuario.length; i++)
+		 {
+			if (usuario[i] != null)
+			{
+				System.out.println(usuario[i].nombre);
+			}
+		} 
 	 }
 	 
 	 public verificarPrestamo()
